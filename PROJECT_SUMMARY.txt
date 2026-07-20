@@ -1,0 +1,67 @@
+GPU WORX WEBSITE REDESIGN — PROJECT SUMMARY
+=============================================
+
+Tech Stack: Vite 7 + React 19 + TypeScript + Tailwind CSS 4 + Framer Motion + Lucide React
+
+FILE STRUCTURE (22 source files)
+--------------------------------
+src/
+├── App.tsx                    — Router setup
+├── main.tsx                   — Entry point
+├── index.css                  — Tailwind + design tokens
+├── lib/utils.ts               — cn() utility
+├── data/content.ts            — All site content (easy to update)
+├── components/
+│   ├── layout/
+│   │   ├── Header.tsx         — Sticky nav, mobile hamburger
+│   │   ├── Footer.tsx         — Links, contact, copyright
+│   │   └── Layout.tsx         — Page wrapper
+│   ├── ui/
+│   │   ├── Button.tsx         — Primary/secondary/ghost variants
+│   │   ├── Card.tsx           — Hover-glow cards
+│   │   ├── SectionHeading.tsx — Consistent section titles
+│   │   ├── ScrollReveal.tsx   — Framer Motion scroll animations
+│   │   └── LogoMarquee.tsx    — Partner brand display
+│   └── sections/
+│       ├── Hero.tsx           — Full-screen hero + stats
+│       ├── ServicesGrid.tsx   — 6 service cards
+│       ├── ProblemSolution.tsx — GPU issue symptoms
+│       ├── HowItWorks.tsx     — 4-step process
+│       ├── Testimonials.tsx   — Client quotes
+│       └── FinalCTA.tsx       — Conversion section
+└── pages/
+    ├── Home.tsx               — Full homepage
+    ├── Services.tsx           — Service catalog
+    ├── ServiceDetail.tsx      — Individual service pages
+    ├── About.tsx              — Company story + values
+    └── Contact.tsx            — Form + contact info
+
+DESIGN SYSTEM
+-------------
+Colors: Dark charcoal base (#0a0a14) + electric cyan accent (#00f5d4)
+Fonts: Space Grotesk (display) + DM Sans (body)
+Animations: Subtle scroll reveals via Framer Motion
+Responsive: Mobile-first, all breakpoints
+
+TO RUN
+------
+cd /home/admin/Documents/opencode/gpuworx
+npm run dev
+
+KEY IMPROVEMENTS OVER CURRENT SITE
+-----------------------------------
+1. Clear value proposition in <5 seconds ("Your GPU Deserves Expert Care")
+2. Social proof (stats, testimonials, partner logos)
+3. Structured services with detail pages per service
+4. Professional CTAs ("Get a Free Diagnosis" vs generic "Fix Now")
+5. Mobile-responsive with hamburger menu
+6. SEO-optimized with meta tags and structured content
+7. Modern dark theme with accent glow effects
+8. Scroll animations for engagement
+9. Centralized content — all text in one file for easy client updates
+
+BUILD STATUS
+------------
+TypeScript type-check: PASSED
+Production build: PASSED (620ms)
+Output: dist/ (393KB JS + 27KB CSS gzipped)
